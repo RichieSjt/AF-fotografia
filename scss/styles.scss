@@ -1,0 +1,20 @@
+@import '_responsive_mixin';
+@import '_colors';
+@import '_fonts';
+@import '_typography';
+
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+.center{
+    @include flexCenter(column);
+}
+
+#fer-portrait{
+    border-radius: 50px;
+}

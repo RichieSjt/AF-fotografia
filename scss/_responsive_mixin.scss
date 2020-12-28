@@ -1,0 +1,22 @@
+@mixin responsiveMobile() {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin responsiveTablet() {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin largeDevices() {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+//Variable
+@mixin responsive($minWidth, $maxWidth){
+    @media only screen and (min-width: $minWidth) and (max-width: $maxWidth){
+        @content;
+    }
+}
