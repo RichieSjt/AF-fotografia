@@ -1,0 +1,29 @@
+.navbar{
+    .navbar-brand{
+        img{
+            width: 58px;
+        }
+    }
+}
+
+@include responsiveLarge(){
+    .navbar{
+        .navbar-nav{
+            .nav-link{
+                font-size: 18px;
+                height: 100%;
+            }
+        }
+        // .nav-item{
+        //     .dropdown-menu{
+        //         display: none;
+        //     }
+        //     &:hover{
+        //         color: rgba(0,0,0,.9);
+        //         .dropdown-menu{
+        //             display: block;
+        //         }
+        //     }
+        // }
+    }
+}

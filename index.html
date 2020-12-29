@@ -7,8 +7,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=""/>
-    <meta name="keywords" content=""/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <title>AF Fotografía | Inicio</title>
 
@@ -17,31 +17,71 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-5">
+        
+        <a class="navbar-brand d-lg-none" href="/index.html"><img src="img/logo-dark.png" alt=""></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav w-100 justify-content-between">
+                
+                <a class="navbar-brand d-none d-lg-block" href="/index.html"><img src="img/logo-dark.png" alt=""></a>
+
+                <a class="nav-link qualy-bold active px-3" href="/index.html">Inicio<span class="sr-only">(current)</span></a>
+                <a class="nav-link qualy-bold px-3" href="/about.html">About</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link qualy-bold px-3 dropdown-toggle" href="/portafolio.html"
+                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Portafolio
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item avant-garde-bk" href="#">Wedding Portfolio</a>
+                        <a class="dropdown-item avant-garde-bk" href="#">Portrait Portfolio</a>
+                        <a class="dropdown-item avant-garde-bk" href="#">Product Portfolio</a>
+                    </div>
+                </div>
+
+                <a class="nav-link qualy-bold px-3" href="/tienda.html">Tienda</a>
+                <a class="nav-link qualy-bold px-3" href="/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container-fluid grey-af-bg pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <img src="img/fer-main.png" class="img-fluid" alt="Responsive image" id="fer-portrait">
+                <div class="col-md-6">
+                    <img src="img/fer-main.png" class="img-fluid p-4" alt="Responsive image" id="fer-portrait">
                 </div>
-                <div class="col-6 center">
-                    <h3 style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;"> ¡Bienvenido a AF Fotografía! </h3>
-                    <p class="pt-5">
-                        Mi nombre es Fernanda Parra. Soy una fotógrafa, emprendedora y estratega de redes sociales. 
-                        Soy estudiante de la Licenciatura en Administración y Estrategia de Negocios con concentración 
-                        en Mercadotecnia por el Tecnológico de Monterrey y llevo 3 años capturando los momentos más importantes 
+                <div class="col-md-6 center">
+                    <h3 class="qualy-bold dark-blue-af text-center">¡Bienvenido a AF Fotografía!</h3>
+                    <p class="pt-3 pt-md-5 avant-garde-bk text-center">
+                        Mi nombre es Fernanda Parra. Soy una fotógrafa, emprendedora y estratega de redes sociales.
+                        Soy estudiante de la Licenciatura en Administración y Estrategia de Negocios con concentración
+                        en Mercadotecnia por el Tecnológico de Monterrey y llevo 3 años capturando los momentos más
+                        importantes
                         de la vida de las personas.
                     </p>
-                    <p class="pt-2">
-                        Mi versatilidad me ha permitido aprender y explorar en diferentes ámbitos artísticos como lo son la 
-                        fotografía de bodas y eventos sociales, así como fotografía de retrato y de producto; involucrándome 
+                    <p class="pt-md-2 avant-garde-bk text-center">
+                        Mi versatilidad me ha permitido aprender y explorar en diferentes ámbitos artísticos como lo son
+                        la
+                        fotografía de bodas y eventos sociales, así como fotografía de retrato y de producto;
+                        involucrándome
                         con clientes como personas, empresas y marcas.
                     </p>
                 </div>
-                
+
             </div>
         </div>
-        
+
     </div>
 
 
@@ -49,4 +89,5 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/affotografia.js"></script>
 </body>
+
 </html>
