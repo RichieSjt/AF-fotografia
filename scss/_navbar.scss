@@ -1,17 +1,85 @@
+.logo-large{
+    width: 160px;
+}
+.logo-small{
+    width: 58px;
+}
 .navbar{
-    .navbar-brand{
-        img{
-            width: 58px;
+    .navbar-toggler{
+        color: rgba(0,0,0,.5);
+        border-color: rgba(0,0,0,.1);
+
+        .navbar-toggler-icon{
+            color: rgba(0, 0, 0, 0.5);
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+}
+.navbar-nav{
+    .nav-link{
+        font-size: 18px;
+        height: 100%;
+        color: rgba(0,0,0,.5);
+    }
+    .nav-link.active{
+        color: rgba(0,0,0,.9);
+    }
+    .dropdown{
+        .dropdown-menu{
+            a{
+                &:active{
+                    background-image: none;
+                    background-color: none;
+                }
+            }
+        }
+    }
+    .nav-item.dropdown.show{
+        a{
+            color: rgba(0,0,0,1);
         }
     }
 }
 
 @include responsiveLarge(){
     .navbar{
+        background: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        .navbar-brand{
+            padding-bottom: 20px;
+        }
         .navbar-nav{
+            .nav-item.dropdown.show{
+                a{
+                    color: rgba(255,255,255,1);
+                }
+            }
+            .dropdown{
+                .dropdown-menu{
+                    background: none;
+                    border: none;
+                    a{
+                        outline: none;
+                        &:hover{
+                            background: none;
+                            color: rgba(255,255,255,.8);
+                        }
+                    }
+                }
+            }
             .nav-link{
-                font-size: 18px;
+                font-size: 23px;
                 height: 100%;
+                color: rgba(255,255,255,.5);
+                &:hover{
+                    color: rgba(255,255,255,.8);
+                }
+            }
+            .nav-link.active{
+                color: #fff;
             }
         }
         // .nav-item{

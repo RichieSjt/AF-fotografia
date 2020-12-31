@@ -1,0 +1,21 @@
+#carouselHome{
+    .carousel-inner{
+        .carousel-item{
+            background-color: #000000;
+            img{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+// #carouselQuotes{
+//     .carousel-indicators li {
+//         border: none;
+//         background: #ccc;
+//     }
+    
+//     .carousel-indicators li.active {
+//         background: $dark-blue-af;
+//     }
+// }

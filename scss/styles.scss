@@ -5,6 +5,7 @@
 @import '_typography';
 
 @import '_navbar';
+@import '_carousel';
 
 @mixin flexCenter($direction) {
     display: flex;
@@ -20,4 +21,16 @@
 
 #fer-portrait{
     border-radius: 50px;
+}
+
+#social-icons{
+    @include flexCenter(row);
+
+    @include responsiveLarge(){
+        @include flexCenter(column);
+    }
+}
+
+.yottie-widget-header{
+    background-color: #ffffff;
 }
