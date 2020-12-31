@@ -151,6 +151,12 @@
   opacity: 0.6;
 }
 
+@media only screen and (min-width: 1200px) {
+  .container {
+    min-width: 85vw;
+  }
+}
+
 .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,5 +219,19 @@
 
 .yottie-widget-header {
   background-color: #ffffff;
+}
+
+#about-cover {
+  background-color: #000000;
+}
+
+#about-cover img {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-20 {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

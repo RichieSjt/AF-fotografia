@@ -13,6 +13,11 @@
         @content;
     }
 }
+@mixin responsiveExtraLarge() {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
 
 //Variable
 @mixin responsive($minWidth, $maxWidth){

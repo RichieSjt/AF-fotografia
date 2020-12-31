@@ -1,5 +1,6 @@
 //Common
 @import '_responsive_mixin';
+@import '_general_mixins';
 @import '_colors';
 @import '_fonts';
 @import '_typography';
@@ -7,13 +8,13 @@
 @import '_navbar';
 @import '_carousel';
 
-@mixin flexCenter($direction) {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: $direction;
+
+.container{
+    @include responsiveExtraLarge(){
+        min-width: 85vw;
+    }
 }
+
 
 .center{
     @include flexCenter(column);
@@ -33,4 +34,14 @@
 
 .yottie-widget-header{
     background-color: #ffffff;
+}
+
+#about-cover{
+    @include opacity(0.8);
+}
+
+.font-lg-20{
+    @include responsiveLarge(){
+        font-size: 20px;
+    }
 }

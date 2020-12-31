@@ -1,0 +1,14 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin opacity($value){
+    background-color: #000000;
+    img{
+        opacity: $value;
+    }
+}
