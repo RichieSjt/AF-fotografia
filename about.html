@@ -19,38 +19,48 @@
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
-     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg py-3 px-5 w-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 px-5 w-100">
 
         <a class="navbar-brand d-none d-lg-block" href="/index.html"><img src="img/logo-white.png" class="logo-large" alt=""></a>
         <a class="navbar-brand d-lg-none" href="/index.html"><img src="img/logo-dark.png" class="logo-small" alt=""></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav w-100 justify-content-between">
 
-                <a class="nav-link avant-garde-bk px-3" href="/index.html">HOME</a>
-                <a class="nav-link avant-garde-bk active px-3" href="/about.html">SOBRE MI<span
-                    class="sr-only">(current)</span></a>
-                <div class="nav-item dropdown">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-between">
+                <li>
+                    <a class="nav-link avant-garde-bk px-3" href="/index.html">HOME</a>
+                </li>
+                <li>
+                    <a class="nav-link avant-garde-bk active px-3" href="/about.html">SOBRE MI<span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
                     <a class="nav-link avant-garde-bk px-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         PORTFOLIO
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item avant-garde-bk" href="#">Wedding Portfolio</a>
-                        <a class="dropdown-item avant-garde-bk" href="#">Portrait Portfolio</a>
-                        <a class="dropdown-item avant-garde-bk" href="#">Product Portfolio</a>
+                        <a class="dropdown-item avant-garde-bk" href="/wedding-portfolio.html">Wedding Portfolio</a>
+                        <a class="dropdown-item avant-garde-bk" href="/portrait-portfolio.html">Portrait Portfolio</a>
+                        <a class="dropdown-item avant-garde-bk" href="/product-portfolio.html">Product Portfolio</a>
                     </div>
-                </div>
+                </li>
 
-                <a class="nav-link avant-garde-bk px-3" href="/tienda.html">BOOKING</a>
-                <a class="nav-link avant-garde-bk px-3" href="/contacto.html">APRENDE</a>
-                <a class="nav-link avant-garde-bk px-3" href="/contacto.html">TIENDA</a>
-            </div>
+                <li>
+                    <a class="nav-link avant-garde-bk px-3" href="/booking.html">BOOKING</a>
+                </li>
+                <li>
+                    <a class="nav-link avant-garde-bk px-3" href="/blog.html">APRENDE</a>
+                </li>
+                <li>
+                    <a class="nav-link avant-garde-bk px-3" href="/tienda.html">TIENDA</a>
+                </li>
+            </ul>
         </div>
     </nav>
     <!-- Navbar -->
