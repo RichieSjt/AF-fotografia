@@ -53,6 +53,11 @@
   src: url("../fonts/QualyBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Quick Signature';
+  src: url("../fonts/QuickSignature.otf") format("opentype");
+}
+
 .avant-garde-bk {
   font-family: 'ITC';
 }
@@ -63,6 +68,10 @@
 
 .qualy-bold {
   font-family: 'Qualy Bold';
+}
+
+.quick-signature {
+  font-family: 'Quick Signature';
 }
 
 .logo-large {
@@ -177,6 +186,10 @@
 
 #fer-portrait {
   border-radius: 50px;
+}
+
+a, a:visited {
+  color: inherit;
 }
 
 #social-icons {
