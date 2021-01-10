@@ -49,3 +49,23 @@ a, a:visited {
         font-size: 20px;
     }
 }
+
+.font-lg-90{
+    @include responsiveLarge(){
+        font-size: 90px;
+    }
+}
+
+.font-lg-60{
+    @include responsiveLarge(){
+        font-size: 60px;
+    }
+}
+
+.front-images{
+    @include front();
+}
+.prueba{
+    max-height: 1000vh !important;;
+    width: auto;
+}

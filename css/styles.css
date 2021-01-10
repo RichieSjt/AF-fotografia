@@ -247,4 +247,28 @@ a, a:visited {
     font-size: 20px;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .font-lg-90 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-60 {
+    font-size: 60px;
+  }
+}
+
+.front-images {
+  height: 100vh;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.prueba {
+  max-height: 1000vh !important;
+  width: auto;
+}
 /*# sourceMappingURL=styles.css.map */
