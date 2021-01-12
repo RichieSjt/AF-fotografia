@@ -2,6 +2,10 @@
     .carousel-inner{
         .carousel-item{
             @include opacity(0.6);
+
+            img{
+                @include imageScreenCover;
+            }
         }
     }
 }

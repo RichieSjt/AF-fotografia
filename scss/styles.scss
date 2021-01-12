@@ -62,9 +62,10 @@ a, a:visited {
     }
 }
 
-.front-images{
-    @include front();
+.image-screen-cover{
+    @include imageScreenCover();
 }
+
 .prueba{
     max-height: 1000vh !important;;
     width: auto;
