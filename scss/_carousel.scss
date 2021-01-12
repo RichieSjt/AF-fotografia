@@ -10,6 +10,25 @@
     }
 }
 
+#carouselWedding{
+    .carousel-inner{
+        .carousel-item{
+            img{
+                @include imageScreenCover;
+            }
+        }
+    }
+}
+
+#carouselPortrait{
+    .carousel-inner{
+        max-height: 90vh;
+        @include responsiveMobile(){
+            max-height: 50vh;
+        }
+    }
+}
+
 // #carouselQuotes{
 //     .carousel-indicators li {
 //         border: none;

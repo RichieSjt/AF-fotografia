@@ -8,16 +8,12 @@
 @import '_navbar';
 @import '_carousel';
 
-
-.container{
-    @include responsiveExtraLarge(){
-        min-width: 85vw;
-    }
-}
-
-
 .center{
     @include flexCenter(column);
+}
+
+.center-h{
+    @include flexCenter(row);
 }
 
 #fer-portrait{
@@ -50,9 +46,9 @@ a, a:visited {
     }
 }
 
-.font-lg-90{
+.font-lg-70{
     @include responsiveLarge(){
-        font-size: 90px;
+        font-size: 70px;
     }
 }
 
@@ -66,7 +62,13 @@ a, a:visited {
     @include imageScreenCover();
 }
 
-.prueba{
-    max-height: 1000vh !important;;
-    width: auto;
+.about-phrases-container{
+    width: 100%;
+    max-width: 85%;
+}
+
+.wedding-titles{
+    @include responsive(768px, 1199px){
+        min-height: 75px;
+    }
 }

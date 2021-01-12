@@ -58,6 +58,11 @@
   src: url("../fonts/QuickSignature.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Parisienne Regular';
+  src: url("../fonts/Parisienne-Regular.ttf") format("truetype");
+}
+
 .avant-garde-bk {
   font-family: 'ITC';
 }
@@ -70,8 +75,8 @@
   font-family: 'Qualy Bold';
 }
 
-.quick-signature {
-  font-family: 'Quick Signature';
+.parisienne-regular {
+  font-family: 'Parisienne Regular';
 }
 
 .logo-large {
@@ -169,9 +174,22 @@
      object-fit: cover;
 }
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    min-width: 85vw;
+#carouselWedding .carousel-inner .carousel-item img {
+  height: 100%;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#carouselPortrait .carousel-inner {
+  max-height: 90vh;
+}
+
+@media only screen and (max-width: 767px) {
+  #carouselPortrait .carousel-inner {
+    max-height: 50vh;
   }
 }
 
@@ -191,6 +209,24 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.center-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #fer-portrait {
@@ -258,8 +294,8 @@ a, a:visited {
 }
 
 @media only screen and (min-width: 992px) {
-  .font-lg-90 {
-    font-size: 90px;
+  .font-lg-70 {
+    font-size: 70px;
   }
 }
 
@@ -278,8 +314,14 @@ a, a:visited {
      object-fit: cover;
 }
 
-.prueba {
-  max-height: 1000vh !important;
-  width: auto;
+.about-phrases-container {
+  width: 100%;
+  max-width: 85%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wedding-titles {
+    min-height: 75px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
