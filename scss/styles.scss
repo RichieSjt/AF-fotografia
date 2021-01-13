@@ -72,3 +72,16 @@ a, a:visited {
         min-height: 75px;
     }
 }
+
+.quotes-card{
+    .row{
+        .rounded{
+            @include responsiveMobile{
+                border-radius: 0 !important;
+            }
+        }
+    }
+    @include responsiveMobile{
+        max-width: 100%;
+    }
+}

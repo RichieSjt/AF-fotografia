@@ -324,4 +324,16 @@ a, a:visited {
     min-height: 75px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .quotes-card .row .rounded {
+    border-radius: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .quotes-card {
+    max-width: 100%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
