@@ -233,10 +233,6 @@
   border-radius: 50px;
 }
 
-a, a:visited {
-  color: inherit;
-}
-
 #social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,8 +271,20 @@ a, a:visited {
   }
 }
 
-.yottie-widget-header {
-  background-color: #ffffff;
+#social-icons a i {
+  color: #212529;
+}
+
+#social-icons .fa-facebook-square:hover {
+  color: #007bff;
+}
+
+#social-icons .fa-instagram:hover {
+  color: #C13584;
+}
+
+#social-icons .fa-youtube:hover {
+  color: #dc3545;
 }
 
 #about-cover {

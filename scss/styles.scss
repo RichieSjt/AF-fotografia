@@ -20,20 +20,32 @@
     border-radius: 50px;
 }
 
-a, a:visited {
-    color: inherit;
-}
-
 #social-icons{
     @include flexCenter(row);
 
     @include responsiveLarge(){
         @include flexCenter(column);
     }
-}
-
-.yottie-widget-header{
-    background-color: #ffffff;
+    a{
+        i{
+            color: rgb(33, 37, 41);
+        }
+    }
+    .fa-facebook-square{
+        &:hover{
+            color: #007bff;
+        }
+    }
+    .fa-instagram{
+        &:hover{
+            color: #C13584;
+        }
+    }
+    .fa-youtube{
+        &:hover{
+            color: #dc3545;
+        }
+    }
 }
 
 #about-cover{
