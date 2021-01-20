@@ -322,15 +322,9 @@
      object-fit: cover;
 }
 
-.about-phrases-container {
+.about-quotes-container {
   width: 100%;
   max-width: 85%;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wedding-titles {
-    min-height: 75px;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -342,6 +336,78 @@
 @media only screen and (max-width: 767px) {
   .quotes-card {
     max-width: 100%;
+  }
+}
+
+.wedding-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wedding-titles {
+    min-height: 75px;
+  }
+}
+
+.portrait-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portrait-titles {
+    min-height: 115px;
+  }
+}
+
+.product-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .product-titles {
+    min-height: 115px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

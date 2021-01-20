@@ -74,15 +74,9 @@
     @include imageScreenCover();
 }
 
-.about-phrases-container{
+.about-quotes-container{
     width: 100%;
     max-width: 85%;
-}
-
-.wedding-titles{
-    @include responsive(768px, 1199px){
-        min-height: 75px;
-    }
 }
 
 .quotes-card{
@@ -95,5 +89,24 @@
     }
     @include responsiveMobile{
         max-width: 100%;
+    }
+}
+
+.wedding-titles{
+    @include flexCenter(row);
+    @include responsive(768px, 1199px){
+        min-height: 75px;
+    }
+}
+.portrait-titles{
+    @include flexCenter(row);
+    @include responsive(768px, 991px){
+        min-height: 115px;
+    }
+}
+.product-titles{
+    @include flexCenter(row);
+    @include responsive(768px, 991px){
+        min-height: 115px;
     }
 }
