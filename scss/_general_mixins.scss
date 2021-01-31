@@ -20,3 +20,9 @@
     background-position: center;
     object-fit: cover;
 }
+
+@mixin backgroundCover {
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
