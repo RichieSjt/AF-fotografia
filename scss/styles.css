@@ -1,0 +1,413 @@
+.light-cyan-af {
+  color: #94BDCF;
+}
+
+.light-cyan-af-bg {
+  background-color: #94BDCF;
+}
+
+.cyan-af {
+  color: #027D8F;
+}
+
+.cyan-af-bg {
+  background-color: #027D8F;
+}
+
+.pink-af {
+  color: #D899C4;
+}
+
+.pink-af-bg {
+  background-color: #D899C4;
+}
+
+.dark-blue-af {
+  color: #262B62;
+}
+
+.dark-blue-af-bg {
+  background-color: #262B62;
+}
+
+.grey-af {
+  color: #EAEAEA;
+}
+
+.grey-af-bg {
+  background-color: #EAEAEA;
+}
+
+@font-face {
+  font-family: 'ITC';
+  src: url("../fonts/ITCAvantGardeStd-Bk.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ITC_XL';
+  src: url("../fonts/ITCAvantGardeStd-XLt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Qualy Bold';
+  src: url("../fonts/QualyBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Quick Signature';
+  src: url("../fonts/QuickSignature.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Parisienne Regular';
+  src: url("../fonts/Parisienne-Regular.ttf") format("truetype");
+}
+
+.avant-garde-bk {
+  font-family: 'ITC';
+}
+
+.avant-garde-xl {
+  font-family: 'ITC_XL';
+}
+
+.qualy-bold {
+  font-family: 'Qualy Bold';
+}
+
+.parisienne-regular {
+  font-family: 'Parisienne Regular';
+}
+
+.logo-large {
+  width: 160px;
+}
+
+.logo-small {
+  width: 58px;
+}
+
+.navbar .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: rgba(0, 0, 0, 0.5);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link.active {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-nav .dropdown .dropdown-menu a:active {
+  background-image: none;
+  background-color: none;
+}
+
+.navbar-nav .nav-item.dropdown.show a {
+  color: black;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+  }
+  .navbar .navbar-brand {
+    padding-bottom: 20px;
+  }
+  .navbar .navbar-nav .nav-item.dropdown.show a {
+    color: white;
+  }
+  .navbar .navbar-nav .dropdown .dropdown-menu {
+    background: none;
+    border: none;
+  }
+  .navbar .navbar-nav .dropdown .dropdown-menu a {
+    outline: none;
+  }
+  .navbar .navbar-nav .dropdown .dropdown-menu a:hover {
+    background: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 23px;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar .navbar-nav .nav-link.active {
+    color: #fff;
+  }
+}
+
+#carouselHome .carousel-inner .carousel-item {
+  background-color: #000000;
+}
+
+#carouselHome .carousel-inner .carousel-item img {
+  opacity: 0.6;
+}
+
+#carouselHome .carousel-inner .carousel-item img {
+  height: 100%;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#carouselWedding .carousel-inner .carousel-item img {
+  height: 100%;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#carouselPortrait .carousel-inner {
+  max-height: 90vh;
+}
+
+@media only screen and (max-width: 767px) {
+  #carouselPortrait .carousel-inner {
+    max-height: 50vh;
+  }
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.center-h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#fer-portrait {
+  border-radius: 50px;
+}
+
+#social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 992px) {
+  #social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#social-icons a i {
+  color: #212529;
+}
+
+#social-icons .fa-facebook-square:hover {
+  color: #007bff;
+}
+
+#social-icons .fa-instagram:hover {
+  color: #C13584;
+}
+
+#social-icons .fa-youtube:hover {
+  color: #dc3545;
+}
+
+#about-cover {
+  background-color: #000000;
+}
+
+#about-cover img {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-20 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-70 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-60 {
+    font-size: 60px;
+  }
+}
+
+.image-screen-cover {
+  height: 100%;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-quotes-container {
+  width: 100%;
+  max-width: 85%;
+}
+
+@media only screen and (max-width: 767px) {
+  .quotes-card .row .rounded {
+    border-radius: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .quotes-card {
+    max-width: 100%;
+  }
+}
+
+.wedding-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wedding-titles {
+    min-height: 75px;
+  }
+}
+
+.portrait-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portrait-titles {
+    min-height: 115px;
+  }
+}
+
+.product-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .product-titles {
+    min-height: 115px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
