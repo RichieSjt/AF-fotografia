@@ -39,18 +39,31 @@
         }
     }
     .fa-facebook-square{
+        transition-property: color;
+        transition-duration: 0.3s;
         &:hover{
             color: #007bff;
         }
     }
     .fa-instagram{
+        transition-property: color;
+        transition-duration: 0.3s;
         &:hover{
             color: #C13584;
         }
     }
     .fa-youtube{
+        transition-property: color;
+        transition-duration: 0.3s;
         &:hover{
             color: #dc3545;
+        }
+    }
+    // Learn more button
+    div{
+        a{
+            transition-property: all;
+            transition-duration: 0.4s;
         }
     }
 }
@@ -69,24 +82,6 @@
 
 #about-cover{
     @include opacity(0.8);
-}
-
-.font-lg-20{
-    @include responsiveLarge(){
-        font-size: 20px;
-    }
-}
-
-.font-lg-70{
-    @include responsiveLarge(){
-        font-size: 70px;
-    }
-}
-
-.font-lg-60{
-    @include responsiveLarge(){
-        font-size: 60px;
-    }
 }
 
 .image-screen-cover{
@@ -111,21 +106,35 @@
     }
 }
 
-.wedding-titles{
-    @include flexCenter(row);
-    @include responsive(768px, 1199px){
-        min-height: 75px;
+#name-2-container{
+    @include responsiveMobile{
+        margin-right: 0;
+        margin-left: 0;
     }
 }
-.portrait-titles{
-    @include flexCenter(row);
-    @include responsive(768px, 991px){
-        min-height: 115px;
-    }
+
+.telegram-icon-container{
+    height: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
 }
-.product-titles{
-    @include flexCenter(row);
-    @include responsive(768px, 991px){
-        min-height: 115px;
-    }
+
+.telegram-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.telegram-icon-mobile{
+    width: 50px;
+    height: 50px;
 }

@@ -1,29 +1,3 @@
-.telegram-icon-container{
-  height: 50px;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 999;
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: #000000;
-  text-decoration: none;
-}
-
-.telegram-icon{
-  width: 40px;
-  height: 40px;
-}
-.telegram-icon-mobile{
-  width: 50px;
-  height: 50px;
-}
-
-
 .light-cyan-af {
   color: #94BDCF;
 }
@@ -89,6 +63,11 @@
   src: url("../fonts/Parisienne-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Kristi Regular';
+  src: url("../fonts/Kristi-Regular.ttf") format("truetype");
+}
+
 .avant-garde-bk {
   font-family: 'ITC';
 }
@@ -103,6 +82,100 @@
 
 .parisienne-regular {
   font-family: 'Parisienne Regular';
+}
+
+.kristi-regular {
+  font-family: 'Kristi Regular';
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-20 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-70 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .font-lg-60 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .font-intro-cards {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .font-intro-cards {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .banner-titles, .wedding-titles, .portrait-titles {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-titles, .wedding-titles, .portrait-titles {
+    font-size: 40px;
+  }
+}
+
+.wedding-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .wedding-titles {
+    min-height: 75px;
+  }
+}
+
+.portrait-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .portrait-titles {
+    min-height: 115px;
+  }
 }
 
 .logo-large {
@@ -309,16 +382,44 @@
   color: #212529;
 }
 
+#social-icons .fa-facebook-square {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 #social-icons .fa-facebook-square:hover {
   color: #007bff;
+}
+
+#social-icons .fa-instagram {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 #social-icons .fa-instagram:hover {
   color: #C13584;
 }
 
+#social-icons .fa-youtube {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 #social-icons .fa-youtube:hover {
   color: #dc3545;
+}
+
+#social-icons div a {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 #banners-home div {
@@ -347,24 +448,6 @@
   opacity: 0.8;
 }
 
-@media only screen and (min-width: 992px) {
-  .font-lg-20 {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .font-lg-70 {
-    font-size: 70px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .font-lg-60 {
-    font-size: 60px;
-  }
-}
-
 .image-screen-cover {
   height: 100%;
   max-height: 100vh;
@@ -391,75 +474,43 @@
   }
 }
 
-.wedding-titles {
+@media only screen and (max-width: 767px) {
+  #name-2-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.telegram-icon-container {
+  height: 50px;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .wedding-titles {
-    min-height: 75px;
-  }
-}
-
-.portrait-titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .portrait-titles {
-    min-height: 115px;
-  }
+.telegram-icon {
+  width: 40px;
+  height: 40px;
 }
 
-.product-titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .product-titles {
-    min-height: 115px;
-  }
+.telegram-icon-mobile {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
