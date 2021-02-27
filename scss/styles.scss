@@ -7,6 +7,7 @@
 
 @import '_navbar';
 @import '_carousel';
+@import '_input';
 
 .center{
     @include flexCenter(column);
@@ -80,12 +81,21 @@
     }
 }
 
-#about-cover{
+#about-cover, 
+#wedding-portfolio-cover, 
+#portrait-portfolio-cover,
+#product-portfolio-cover{
     @include opacity(0.8);
+
+    img{
+        @include imageScreenCover(100vh);
+        width: 100%;
+    }
+    
 }
 
 .image-screen-cover{
-    @include imageScreenCover();
+    @include imageScreenCover(100vh);
 }
 
 .about-quotes-container{

@@ -4,7 +4,7 @@
             @include opacity(0.6);
 
             img{
-                @include imageScreenCover;
+                @include imageScreenCover(100vh);
             }
         }
     }
@@ -14,9 +14,45 @@
     .carousel-inner{
         .carousel-item{
             img{
-                @include imageScreenCover;
+                @include imageScreenCover(100vh);
             }
         }
+    }
+}
+
+#carouselEstudioProduct, 
+#carouselComercialProduct, 
+#carouselGastroProduct{
+    .carousel-inner{
+        .carousel-item{
+            @include opacity(0.6);
+            img{
+                @include imageScreenCover(65vh);
+
+                @include responsiveLarge(){
+                    @include imageScreenCover(100vh);
+                }
+            }
+        }
+    }
+    h2{
+        @include position-absolute(45%, 50%);
+        @include responsiveMobile(){
+            @include position-absolute(50%, 50%);
+        }
+    }
+    p{
+        @include position-absolute(55%, 50%);
+        @include responsiveMobile(){
+            display: none;
+        }
+    }
+}
+
+.img-description{
+    display: none;
+    @include responsiveMobile(){
+        display: block;
     }
 }
 

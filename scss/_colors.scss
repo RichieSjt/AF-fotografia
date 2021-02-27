@@ -3,6 +3,12 @@ $cyan-af:#027D8F;
 $pink-af:#D899C4;
 $dark-blue-af: #262B62;
 $grey-af:#EAEAEA;
+$light-blue-af: #00ADE7;
+$dark-purple-af: #3a459c;
+$white: #fff;
+$primary-input: #11998e;
+$secondary-input: #38ef7d;
+$gray-input: #9b9b9b;
 
 .light-cyan-af{
     color: $light-cyan-af;
@@ -37,4 +43,18 @@ $grey-af:#EAEAEA;
 }
 .grey-af-bg{
     background-color: $grey-af;
+}
+
+.light-blue-af{
+    color: $light-blue-af;
+}
+.light-blue-af-bg{
+    background-color: $light-blue-af;
+}
+
+.dark-purple-af{
+    color: $dark-purple-af;
+}
+.dark-purple-af-bg{
+    background-color: $dark-purple-af;
 }

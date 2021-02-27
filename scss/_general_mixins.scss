@@ -13,9 +13,18 @@
     }
 }
 
-@mixin imageScreenCover {
+@mixin imageScreenCover($view-height) {
     height: 100%;
-    max-height: 100vh;
+    max-height: $view-height ;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+
+@mixin imageScreenCoverMobile($view-height){
+    // $real-view-height: calc($view-height - 73.91px);
+    height: 100%;
+    min-height: $view-height;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
@@ -25,4 +34,11 @@
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
+}
+
+@mixin position-absolute($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
 }

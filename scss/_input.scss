@@ -1,0 +1,82 @@
+.custom-form-group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.custom-form-field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $light-blue-af;
+    outline: 0;
+    font-size: 1.1rem;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:placeholder-shown ~ .custom-form-label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+    }
+}
+
+.custom-form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $light-blue-af;
+}
+
+.custom-form-field:focus {
+  ~ .custom-form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+  }
+  padding-bottom: 6px;
+  border-bottom: 3px linear-gradient(to right, $primary-input,$secondary-input);
+  @include responsiveLarge(){
+        border-width: 3px;
+        border-image: linear-gradient(to right, $primary-input,$secondary-input);
+        border-image-slice: 1;
+  }
+}
+/* reset input */
+.custom-form-field{
+  &:required,&:invalid { box-shadow:none; }
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.custom-btn{
+    background-color: $dark-purple-af;
+    color: $white;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    @include flexCenter(row);
+    transition-property: all;
+    transition-duration: 0.4s;
+
+    i{
+        padding-top: 3.4px;
+    }
+    
+    &:hover{
+        background-color: $white;
+        color: $dark-purple-af;
+    }
+}

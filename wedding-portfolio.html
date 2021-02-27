@@ -52,9 +52,6 @@
                 </li>
 
                 <li>
-                    <a class="nav-link avant-garde-bk px-3" href="/booking.html">BOOKING</a>
-                </li>
-                <li>
                     <a class="nav-link avant-garde-bk px-3" href="/blog.html">APRENDE</a>
                 </li>
                 <li>
@@ -64,8 +61,8 @@
         </div>
     </nav>
     <!-- Navbar -->
-    <div class="container-fluid p-0" id="about-cover">
-        <img src="img/Portfolios/WeddingPortfolio/Principal.jpg" class="image-screen-cover d-block w-100" alt="...">
+    <div class="container-fluid p-0" id="wedding-portfolio-cover">
+        <img src="img/Portfolios/WeddingPortfolio/Principal.jpg" alt="Dos personas levantando una copa">
     </div>
     
     <!-- Intro Bodas -->
@@ -161,41 +158,41 @@
         </div>
         <!-- Banners Bodas -->
     </div>
-    <div class="container-fluid grey-af-bg py-4">
-        <div class="container">
-            <form action="" method="get">
-                <div class="form-row">
-                    <div class="form-group col-md-4 col-lg-6">
-                        <label for="input-email">Correo electrónico</label>
-                        <input type="email" class="form-control" id="input-email" placeholder="example@mail.com">
+    <div class="container-fluid dark-purple-af-bg py-4">
+        <div class="container py-4">
+            <h3 class="avant-garde-bk center font-weight-bold text-white">Contáctame</h3>
+            <form action="" method="POST" class="py-2">
+                <div class="form-row pt-0 pb-lg-2">
+                    <div class="custom-form-group field col-12 col-lg-6 pb-2 pb-md-0">
+                        <input type="email" class="custom-form-field" placeholder="example@mail.com" name="input-email" id="input-email" required />
+                        <label for="input-email" class="custom-form-label">Correo electrónico</label>
                     </div>
-                    <div class="form-group col-md-4 col-lg-3">
-                        <label for="name-1">Nombres de los novios</label>
-                        <input type="text" class="form-control" id="name-1" placeholder="Nombre 1">
-                    </div>
-                    <div class="form-group form-row col-md-4 col-lg-3 align-items-end" id="name-2-container">
-                        <input type="text" class="form-control" id="name-2" placeholder="Nombre 2">
+                    <div class="custom-form-group field col-12 col-lg-6 pb-2 pb-md-0">
+                        <input type="text" class="custom-form-field" placeholder="Nombres" name="names" id="names" required />
+                        <label for="names" class="custom-form-label">Nombres de los novios</label>
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="input-address">Locaciones de la ceremonia y la celebración</label>
-                        <input type="text" class="form-control" id="input-address" placeholder="Dirección ceremonia">
-                    </div>
-                    <div class="form-group form-row col-md-4 col-lg-3 align-items-end" id="name-2-container">
-                        <input type="text" class="form-control" id="input-address-2" placeholder="Direccion celebración">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="wedding-date">Fecha de la boda</label>
-                        <input type="date" class="form-control" id="wedding-date">
+                <div class="form-row pt-0 pb-lg-2">
+                    <div class="custom-form-group field col-12 pb-2 pb-md-0">
+                        <input type="text" class="custom-form-field" placeholder="Dirección" name="input-address" id="input-address" required/>
+                        <label for="input-address" class="custom-form-label">Locaciones del evento</label>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="input-services">Servicios que les interesan</label>
-                    <input type="text" class="form-control" id="input-services" placeholder="(cobertura fotográfica, video, álbum fotográfico, photoshoot save the date, etc.)">
+                <div class="form-row pt-0 pb-lg-3">
+                    <div class="custom-form-group field col-12 pb-3 pb-md-0">
+                        <input type="text" class="custom-form-field" placeholder="Dirección" name="input-services" id="input-services" required/>
+                        <label for="input-services" class="custom-form-label">Servicios que les interesan</label>
+                    </div>
                 </div>
-                <div class="form-row justify-content-center pt-2">
-                    <button type="submit" class="btn btn-primary" value="send" id="contact-send">Enviar</button>
+                <div class="form-row pt-0 pb-lg-2">
+                    <div class="custom-form-group field col-12 col-md-4 pb-3 pb-md-0">
+                        <input type="date"  value="" class="custom-form-field" placeholder="dd/mm/yyyy" name="input-date" id="input-date" required/>
+                        <label for="input-date" class="custom-form-label">Fecha de la boda</label>
+                    </div>
+                </div>
+
+                <div class="form-row justify-content-center pt-4">
+                    <button type="submit" class="custom-btn px-5 py-2 font-weight-bold" value="send" id="contact-send">Enviar<i class="fas fa-arrow-right fa-xs pl-2"></i></button>
                 </div>
             </form>
         </div>
@@ -203,16 +200,30 @@
 
     <!-- FAQ -->
     <div class="container-fluid grey-af-bg py-4">
-        <div class="container">
+        <div class="container py-4">
             <h3 class="avant-garde-bk center pb-4 font-weight-bold">FAQ</h3>
-            <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Todas las fotos de la boda las haces tú o tienes una segunda cámara?</h4>
-            <p class="avant-garde-bk pb-4 ">Para las sesiones previas lo hago 100% yo, en la boda normalmente llevo una segunda cámara que me ayuda a estar pendiente de  todo, dependiendo el tiempo de cobertura.</p>
-            <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Ofreces vídeo o álbumes fotográficos?</h4>
-            <p class="avant-garde-bk pb-4 ">Dependiendo del tipo de video que necesites sí podemos adaptarlo a tus necesidades. Los álbumes también son sobre pedido y son completamente personalizados. </p>
-            <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Cómo puedo solicitar mi cotización?</h4>
-            <p class="avant-garde-bk pb-4 ">Envíame un correo a contact.affoto@gmail.com con los datos de tu boda: nombre de los novios, fecha, locaciones de la ceremonia y la celebración así como los servicios que les interesan (cobertura fotográfica, video, álbum fotográfico, photoshoot save the date, etc.) y te estaré respondiendo con tu cotización lo antes posible!</p>
-            <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Retocas las fotos?</h4>
-            <p class="avant-garde-bk pb-4 ">Dependiendo de las cotizaciones y los paquetes, se retocan las fotos de la boda sin cargo extra.</p>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Todas las fotos de la boda las haces tú o tienes una segunda cámara?</h4>
+                        <p class="avant-garde-bk pb-4">Para las sesiones previas lo hago 100% yo, en la boda normalmente llevo una segunda cámara que me ayuda a estar pendiente de  todo, dependiendo el tiempo de cobertura.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Cómo puedo solicitar mi cotización?</h4>
+                        <p class="avant-garde-bk pb-4">Envíame un correo a contact.affoto@gmail.com con los datos de tu boda: nombre de los novios, fecha, locaciones de la ceremonia y la celebración así como los servicios que les interesan (cobertura fotográfica, video, álbum fotográfico, photoshoot save the date, etc.) y te estaré respondiendo con tu cotización lo antes posible!</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Ofreces vídeo o álbumes fotográficos?</h4>
+                        <p class="avant-garde-bk">Dependiendo del tipo de video que necesites sí podemos adaptarlo a tus necesidades. Los álbumes también son sobre pedido y son completamente personalizados. </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="avant-garde-bk pb-2 font-weight-bold">¿Retocas las fotos?</h4>
+                        <p class="avant-garde-bk">Dependiendo de las cotizaciones y los paquetes, se retocan las fotos de la boda sin cargo extra.</p>
+                    </div>
+                </div>
         </div>
     </div>
     <!-- FAQ -->

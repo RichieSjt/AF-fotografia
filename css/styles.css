@@ -38,6 +38,22 @@
   background-color: #EAEAEA;
 }
 
+.light-blue-af {
+  color: #00ADE7;
+}
+
+.light-blue-af-bg {
+  background-color: #00ADE7;
+}
+
+.dark-purple-af {
+  color: #3a459c;
+}
+
+.dark-purple-af-bg {
+  background-color: #3a459c;
+}
+
 @font-face {
   font-family: 'ITC';
   src: url("../fonts/ITCAvantGardeStd-Bk.ttf") format("truetype");
@@ -282,6 +298,92 @@
      object-fit: cover;
 }
 
+#carouselEstudioProduct .carousel-inner .carousel-item,
+#carouselComercialProduct .carousel-inner .carousel-item,
+#carouselGastroProduct .carousel-inner .carousel-item {
+  background-color: #000000;
+}
+
+#carouselEstudioProduct .carousel-inner .carousel-item img,
+#carouselComercialProduct .carousel-inner .carousel-item img,
+#carouselGastroProduct .carousel-inner .carousel-item img {
+  opacity: 0.6;
+}
+
+#carouselEstudioProduct .carousel-inner .carousel-item img,
+#carouselComercialProduct .carousel-inner .carousel-item img,
+#carouselGastroProduct .carousel-inner .carousel-item img {
+  height: 100%;
+  max-height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 992px) {
+  #carouselEstudioProduct .carousel-inner .carousel-item img,
+  #carouselComercialProduct .carousel-inner .carousel-item img,
+  #carouselGastroProduct .carousel-inner .carousel-item img {
+    height: 100%;
+    max-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+#carouselEstudioProduct h2,
+#carouselComercialProduct h2,
+#carouselGastroProduct h2 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 767px) {
+  #carouselEstudioProduct h2,
+  #carouselComercialProduct h2,
+  #carouselGastroProduct h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+#carouselEstudioProduct p,
+#carouselComercialProduct p,
+#carouselGastroProduct p {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 767px) {
+  #carouselEstudioProduct p,
+  #carouselComercialProduct p,
+  #carouselGastroProduct p {
+    display: none;
+  }
+}
+
+.img-description {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .img-description {
+    display: block;
+  }
+}
+
 #carouselPortrait .carousel-inner {
   max-height: 90vh;
 }
@@ -290,6 +392,130 @@
   #carouselPortrait .carousel-inner {
     max-height: 50vh;
   }
+}
+
+.custom-form-group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.custom-form-field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #00ADE7;
+  outline: 0;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.custom-form-field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.custom-form-field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.custom-form-field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.custom-form-field::placeholder {
+  color: transparent;
+}
+
+.custom-form-field:placeholder-shown ~ .custom-form-label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.custom-form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #00ADE7;
+}
+
+.custom-form-field:focus {
+  padding-bottom: 6px;
+  border-bottom: 3px linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.custom-form-field:focus ~ .custom-form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .custom-form-field:focus {
+    border-width: 3px;
+    -o-border-image: linear-gradient(to right, #11998e, #38ef7d);
+       border-image: -webkit-gradient(linear, left top, right top, from(#11998e), to(#38ef7d));
+       border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+}
+
+/* reset input */
+.custom-form-field:required, .custom-form-field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.custom-btn {
+  background-color: #3a459c;
+  color: #fff;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  flex-direction: row;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.custom-btn i {
+  padding-top: 3.4px;
+}
+
+.custom-btn:hover {
+  background-color: #fff;
+  color: #3a459c;
 }
 
 .center {
@@ -440,12 +666,31 @@
   opacity: 0.6;
 }
 
-#about-cover {
+#about-cover,
+#wedding-portfolio-cover,
+#portrait-portfolio-cover,
+#product-portfolio-cover {
   background-color: #000000;
 }
 
-#about-cover img {
+#about-cover img,
+#wedding-portfolio-cover img,
+#portrait-portfolio-cover img,
+#product-portfolio-cover img {
   opacity: 0.8;
+}
+
+#about-cover img,
+#wedding-portfolio-cover img,
+#portrait-portfolio-cover img,
+#product-portfolio-cover img {
+  height: 100%;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .image-screen-cover {
