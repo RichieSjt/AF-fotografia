@@ -157,7 +157,7 @@
     align-items: center;
   }
   
-  .box{
+.box{
     width: 350px;
     height: 610px;
     display: flex;
@@ -166,5 +166,16 @@
     justify-content: space-between;
     box-sizing: border-box;
     margin: 5px 1px;
-    
-  }
+}
+.coming-soon{
+    height: 40vh;
+    h3{
+        font-size: 40px;
+    }
+    @include responsiveMobile{
+        flex-grow: 1;
+        h3{
+            font-size: 28px;
+        }
+    }
+}

@@ -55,53 +55,47 @@
 }
 
 @font-face {
-  font-family: 'ITC';
+  font-family: "ITC";
   src: url("../fonts/ITCAvantGardeStd-Bk.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'ITC_XL';
+  font-family: "ITC_XL";
   src: url("../fonts/ITCAvantGardeStd-XLt.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Qualy Bold';
+  font-family: "Qualy Bold";
   src: url("../fonts/QualyBold.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Quick Signature';
+  font-family: "Quick Signature";
   src: url("../fonts/QuickSignature.otf") format("opentype");
 }
-
 @font-face {
-  font-family: 'Parisienne Regular';
+  font-family: "Parisienne Regular";
   src: url("../fonts/Parisienne-Regular.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Kristi Regular';
+  font-family: "Kristi Regular";
   src: url("../fonts/Kristi-Regular.ttf") format("truetype");
 }
-
 .avant-garde-bk {
-  font-family: 'ITC';
+  font-family: "ITC";
 }
 
 .avant-garde-xl {
-  font-family: 'ITC_XL';
+  font-family: "ITC_XL";
 }
 
 .qualy-bold {
-  font-family: 'Qualy Bold';
+  font-family: "Qualy Bold";
 }
 
 .parisienne-regular {
-  font-family: 'Parisienne Regular';
+  font-family: "Parisienne Regular";
 }
 
 .kristi-regular {
-  font-family: 'Kristi Regular';
+  font-family: "Kristi Regular";
 }
 
 @media only screen and (min-width: 992px) {
@@ -127,7 +121,6 @@
     font-size: 20px;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .font-intro-cards {
     font-size: 15px;
@@ -135,35 +128,23 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .banner-titles, .wedding-titles, .portrait-titles {
+  .banner-titles, .portrait-titles, .wedding-titles {
     font-size: 45px;
   }
 }
-
 @media only screen and (max-width: 767px) {
-  .banner-titles, .wedding-titles, .portrait-titles {
+  .banner-titles, .portrait-titles, .wedding-titles {
     font-size: 40px;
   }
 }
 
 .wedding-titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .wedding-titles {
     min-height: 75px;
@@ -171,23 +152,12 @@
 }
 
 .portrait-titles {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .portrait-titles {
     min-height: 115px;
@@ -206,7 +176,6 @@
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1);
 }
-
 .navbar .navbar-toggler .navbar-toggler-icon {
   color: rgba(0, 0, 0, 0.5);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -217,16 +186,13 @@
   height: 100%;
   color: rgba(0, 0, 0, 0.5);
 }
-
 .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
 }
-
 .navbar-nav .dropdown .dropdown-menu a:active {
   background-image: none;
   background-color: none;
 }
-
 .navbar-nav .nav-item.dropdown.show a {
   color: black;
 }
@@ -234,10 +200,7 @@
 @media only screen and (min-width: 992px) {
   .navbar {
     background: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: absolute;
     top: 0;
     z-index: 100;
@@ -271,22 +234,18 @@
     color: #fff;
   }
 }
-
 #carouselHome .carousel-inner .carousel-item {
   background-color: #000000;
 }
-
 #carouselHome .carousel-inner .carousel-item img {
   opacity: 0.6;
 }
-
 #carouselHome .carousel-inner .carousel-item img {
   height: 100%;
   max-height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #carouselWedding .carousel-inner .carousel-item img {
@@ -294,8 +253,7 @@
   max-height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #carouselEstudioProduct .carousel-inner .carousel-item,
@@ -303,13 +261,11 @@
 #carouselGastroProduct .carousel-inner .carousel-item {
   background-color: #000000;
 }
-
 #carouselEstudioProduct .carousel-inner .carousel-item img,
 #carouselComercialProduct .carousel-inner .carousel-item img,
 #carouselGastroProduct .carousel-inner .carousel-item img {
   opacity: 0.6;
 }
-
 #carouselEstudioProduct .carousel-inner .carousel-item img,
 #carouselComercialProduct .carousel-inner .carousel-item img,
 #carouselGastroProduct .carousel-inner .carousel-item img {
@@ -317,59 +273,49 @@
   max-height: 65vh;
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
 @media only screen and (min-width: 992px) {
   #carouselEstudioProduct .carousel-inner .carousel-item img,
-  #carouselComercialProduct .carousel-inner .carousel-item img,
-  #carouselGastroProduct .carousel-inner .carousel-item img {
+#carouselComercialProduct .carousel-inner .carousel-item img,
+#carouselGastroProduct .carousel-inner .carousel-item img {
     height: 100%;
     max-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
-
 #carouselEstudioProduct h2,
 #carouselComercialProduct h2,
 #carouselGastroProduct h2 {
   position: absolute;
   top: 45%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 @media only screen and (max-width: 767px) {
   #carouselEstudioProduct h2,
-  #carouselComercialProduct h2,
-  #carouselGastroProduct h2 {
+#carouselComercialProduct h2,
+#carouselGastroProduct h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
-
 #carouselEstudioProduct p,
 #carouselComercialProduct p,
 #carouselGastroProduct p {
   position: absolute;
   top: 55%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 @media only screen and (max-width: 767px) {
   #carouselEstudioProduct p,
-  #carouselComercialProduct p,
-  #carouselGastroProduct p {
+#carouselComercialProduct p,
+#carouselGastroProduct p {
     display: none;
   }
 }
@@ -377,7 +323,6 @@
 .img-description {
   display: none;
 }
-
 @media only screen and (max-width: 767px) {
   .img-description {
     display: block;
@@ -387,7 +332,6 @@
 #carouselPortrait .carousel-inner {
   max-height: 90vh;
 }
-
 @media only screen and (max-width: 767px) {
   #carouselPortrait .carousel-inner {
     max-height: 50vh;
@@ -411,26 +355,11 @@
   color: #fff;
   padding: 7px 0;
   background: transparent;
-  -webkit-transition: border-color 0.2s;
   transition: border-color 0.2s;
 }
-
-.custom-form-field::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.custom-form-field:-ms-input-placeholder {
-  color: transparent;
-}
-
-.custom-form-field::-ms-input-placeholder {
-  color: transparent;
-}
-
 .custom-form-field::placeholder {
   color: transparent;
 }
-
 .custom-form-field:placeholder-shown ~ .custom-form-label {
   font-size: 1.3rem;
   cursor: text;
@@ -441,7 +370,6 @@
   position: absolute;
   top: 0;
   display: block;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 1rem;
   color: #00ADE7;
@@ -451,115 +379,73 @@
   padding-bottom: 6px;
   border-bottom: 3px linear-gradient(to right, #11998e, #38ef7d);
 }
-
 .custom-form-field:focus ~ .custom-form-label {
   position: absolute;
   top: 0;
   display: block;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 1rem;
 }
-
 @media only screen and (min-width: 992px) {
   .custom-form-field:focus {
     border-width: 3px;
-    -o-border-image: linear-gradient(to right, #11998e, #38ef7d);
-       border-image: -webkit-gradient(linear, left top, right top, from(#11998e), to(#38ef7d));
-       border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
     border-image-slice: 1;
   }
 }
 
 /* reset input */
 .custom-form-field:required, .custom-form-field:invalid {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 ::-webkit-calendar-picker-indicator {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 
 .custom-btn {
   background-color: #3a459c;
   color: #fff;
   border: 1px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   flex-direction: row;
-  -webkit-transition-property: all;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
   transition-property: all;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
-
 .custom-btn i {
   padding-top: 3.4px;
 }
-
 .custom-btn:hover {
   background-color: #fff;
   color: #3a459c;
 }
 
 .center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .center-h {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .center-absolute {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #fer-portrait {
@@ -567,101 +453,60 @@
 }
 
 #social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
 }
-
 @media only screen and (min-width: 992px) {
   #social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
-
 #social-icons a i {
   color: #212529;
 }
-
 #social-icons .fa-facebook-square {
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-
 #social-icons .fa-facebook-square:hover {
   color: #007bff;
 }
-
 #social-icons .fa-instagram {
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-
 #social-icons .fa-instagram:hover {
   color: #C13584;
 }
-
 #social-icons .fa-youtube {
-  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-
 #social-icons .fa-youtube:hover {
   color: #dc3545;
 }
-
 #social-icons div a {
-  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 #banners-home div {
   background-color: #000000;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-
 #banners-home div img {
   opacity: 0.7;
 }
-
 #banners-home div:hover {
   background-color: #000000;
 }
-
 #banners-home div:hover img {
   opacity: 0.6;
 }
@@ -672,14 +517,12 @@
 #product-portfolio-cover {
   background-color: #000000;
 }
-
 #about-cover img,
 #wedding-portfolio-cover img,
 #portrait-portfolio-cover img,
 #product-portfolio-cover img {
   opacity: 0.8;
 }
-
 #about-cover img,
 #wedding-portfolio-cover img,
 #portrait-portfolio-cover img,
@@ -688,8 +531,7 @@
   max-height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -698,8 +540,7 @@
   max-height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .about-quotes-container {
@@ -712,7 +553,6 @@
     border-radius: 0 !important;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .quotes-card {
     max-width: 100%;
@@ -729,16 +569,9 @@
 .telegram-icon-container {
   height: 50px;
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -759,16 +592,16 @@
   height: 50px;
 }
 
-.container-carousel{
+.container-carousel {
   width: 100%;
   height: 100vh;
-  background-color:#EAEAEA ;
+  background-color: #EAEAEA;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box{
+.box {
   width: 350px;
   height: 610px;
   display: flex;
@@ -777,6 +610,21 @@
   justify-content: space-between;
   box-sizing: border-box;
   margin: 5px 1px;
-  
 }
+
+.coming-soon {
+  height: 40vh;
+}
+.coming-soon h3 {
+  font-size: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .coming-soon {
+    flex-grow: 1;
+  }
+  .coming-soon h3 {
+    font-size: 28px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
