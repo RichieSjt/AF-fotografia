@@ -602,7 +602,7 @@
 }
 
 .box {
-  width: 350px;
+  width: 375px;
   height: 610px;
   display: flex;
   flex-direction: column;
