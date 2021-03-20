@@ -395,8 +395,15 @@
 }
 
 /* reset input */
+.custom-form-field {
+  /* Change the white to any color */
+}
 .custom-form-field:required, .custom-form-field:invalid {
   box-shadow: none;
+}
+.custom-form-field:-webkit-autofill, .custom-form-field:-webkit-autofill:hover, .custom-form-field:-webkit-autofill:focus, .custom-form-field:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px #3a459c inset !important;
+  -webkit-text-fill-color: white;
 }
 
 ::-webkit-calendar-picker-indicator {

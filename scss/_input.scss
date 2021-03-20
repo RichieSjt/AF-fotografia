@@ -56,6 +56,14 @@
 /* reset input */
 .custom-form-field{
   &:required,&:invalid { box-shadow:none; }
+  /* Change the white to any color */
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active{
+        box-shadow: 0 0 0 30px $dark-purple-af inset !important;
+        -webkit-text-fill-color: white;
+    }
 }
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
