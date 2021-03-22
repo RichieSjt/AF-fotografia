@@ -1,9 +1,11 @@
 #carouselHome{
-    .carousel-inner{
-        .carousel-item{
-            @include opacity(0.6);
+    .carousel-item{
+        @include opacity(0.6);
 
-            img{
+        img{
+            @include imageScreenCover(50vh);
+        
+            @include responsiveLarge(){
                 @include imageScreenCover(100vh);
             }
         }
@@ -11,9 +13,11 @@
 }
 
 #carouselWedding{
-    .carousel-inner{
-        .carousel-item{
-            img{
+    .carousel-item{
+        img{
+            @include imageScreenCover(50vh);
+            
+            @include responsiveLarge(){
                 @include imageScreenCover(100vh);
             }
         }
@@ -23,18 +27,18 @@
 #carouselEstudioProduct, 
 #carouselComercialProduct, 
 #carouselGastroProduct{
-    .carousel-inner{
-        .carousel-item{
-            @include opacity(0.6);
-            img{
-                @include imageScreenCover(65vh);
-
-                @include responsiveLarge(){
-                    @include imageScreenCover(100vh);
-                }
+    
+    .carousel-item{
+        @include opacity(0.6);
+        img{
+            @include imageScreenCover(50vh);
+            
+            @include responsiveLarge(){
+                @include imageScreenCover(100vh);
             }
         }
     }
+    
     h2{
         @include position-absolute(45%, 50%);
         @include responsiveMobile(){

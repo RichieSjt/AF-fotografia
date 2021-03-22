@@ -88,11 +88,27 @@
     @include opacity(0.8);
 
     img{
-        @include imageScreenCover(100vh);
+        @include imageScreenCover(50vh);
+        @include responsiveLarge(){
+            @include imageScreenCover(100vh);
+        }
         width: 100%;
     }
-    
 }
+
+#about-image{
+    @include responsiveMobile(){
+        display: none;
+    }
+}
+#about-image-mobile{
+    display: none;
+    @include responsiveMobile(){
+        display: block;
+    }
+}
+    
+
 
 .image-screen-cover{
     @include imageScreenCover(100vh);

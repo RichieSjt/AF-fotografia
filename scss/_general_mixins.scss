@@ -14,8 +14,7 @@
 }
 
 @mixin imageScreenCover($view-height) {
-    height: 100%;
-    max-height: $view-height ;
+    height: $view-height ;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;

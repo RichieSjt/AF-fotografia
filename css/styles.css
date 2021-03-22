@@ -234,53 +234,65 @@
     color: #fff;
   }
 }
-#carouselHome .carousel-inner .carousel-item {
+#carouselHome .carousel-item {
   background-color: #000000;
 }
-#carouselHome .carousel-inner .carousel-item img {
+#carouselHome .carousel-item img {
   opacity: 0.6;
 }
-#carouselHome .carousel-inner .carousel-item img {
-  height: 100%;
-  max-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: cover;
-}
-
-#carouselWedding .carousel-inner .carousel-item img {
-  height: 100%;
-  max-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: cover;
-}
-
-#carouselEstudioProduct .carousel-inner .carousel-item,
-#carouselComercialProduct .carousel-inner .carousel-item,
-#carouselGastroProduct .carousel-inner .carousel-item {
-  background-color: #000000;
-}
-#carouselEstudioProduct .carousel-inner .carousel-item img,
-#carouselComercialProduct .carousel-inner .carousel-item img,
-#carouselGastroProduct .carousel-inner .carousel-item img {
-  opacity: 0.6;
-}
-#carouselEstudioProduct .carousel-inner .carousel-item img,
-#carouselComercialProduct .carousel-inner .carousel-item img,
-#carouselGastroProduct .carousel-inner .carousel-item img {
-  height: 100%;
-  max-height: 65vh;
+#carouselHome .carousel-item img {
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
 }
 @media only screen and (min-width: 992px) {
-  #carouselEstudioProduct .carousel-inner .carousel-item img,
-#carouselComercialProduct .carousel-inner .carousel-item img,
-#carouselGastroProduct .carousel-inner .carousel-item img {
-    height: 100%;
-    max-height: 100vh;
+  #carouselHome .carousel-item img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+}
+
+#carouselWedding .carousel-item img {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+@media only screen and (min-width: 992px) {
+  #carouselWedding .carousel-item img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+}
+
+#carouselEstudioProduct .carousel-item,
+#carouselComercialProduct .carousel-item,
+#carouselGastroProduct .carousel-item {
+  background-color: #000000;
+}
+#carouselEstudioProduct .carousel-item img,
+#carouselComercialProduct .carousel-item img,
+#carouselGastroProduct .carousel-item img {
+  opacity: 0.6;
+}
+#carouselEstudioProduct .carousel-item img,
+#carouselComercialProduct .carousel-item img,
+#carouselGastroProduct .carousel-item img {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+@media only screen and (min-width: 992px) {
+  #carouselEstudioProduct .carousel-item img,
+#carouselComercialProduct .carousel-item img,
+#carouselGastroProduct .carousel-item img {
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
@@ -534,17 +546,41 @@
 #wedding-portfolio-cover img,
 #portrait-portfolio-cover img,
 #product-portfolio-cover img {
-  height: 100%;
-  max-height: 100vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
   width: 100%;
 }
+@media only screen and (min-width: 992px) {
+  #about-cover img,
+#wedding-portfolio-cover img,
+#portrait-portfolio-cover img,
+#product-portfolio-cover img {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #about-image {
+    display: none;
+  }
+}
+
+#about-image-mobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  #about-image-mobile {
+    display: block;
+  }
+}
 
 .image-screen-cover {
-  height: 100%;
-  max-height: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
@@ -634,18 +670,19 @@
   }
 }
 
-
-.whatsapp-icon-mobile{
+.whatsapp-icon-mobile {
   width: 50px;
   height: 50px;
 }
-.quote-carousel{
-  min-height:175px ;
+
+.quote-carousel {
+  min-height: 175px;
 }
 
 @media only screen and (max-width: 767px) {
-  .quote-carousel{
-    min-height:350px ;
+  .quote-carousel {
+    min-height: 350px;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
