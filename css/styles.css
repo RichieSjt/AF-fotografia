@@ -123,7 +123,7 @@
 }
 @media only screen and (max-width: 767px) {
   .font-intro-cards {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
@@ -292,7 +292,7 @@
   #carouselEstudioProduct .carousel-item img,
 #carouselComercialProduct .carousel-item img,
 #carouselGastroProduct .carousel-item img {
-    height: 100vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-position: center;
     object-fit: cover;
@@ -302,7 +302,7 @@
 #carouselComercialProduct h2,
 #carouselGastroProduct h2 {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -361,7 +361,7 @@
   font-family: inherit;
   width: 100%;
   border: 0;
-  border-bottom: 2px solid #00ADE7;
+  border-bottom: 2px solid #fff;
   outline: 0;
   font-size: 1.1rem;
   color: #fff;
@@ -384,12 +384,12 @@
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color: #00ADE7;
+  color: #fff;
 }
 
 .custom-form-field:focus {
   padding-bottom: 6px;
-  border-bottom: 3px linear-gradient(to right, #11998e, #38ef7d);
+  border-bottom: 3px linear-gradient(to right, #fff, #fff);
 }
 .custom-form-field:focus ~ .custom-form-label {
   position: absolute;
@@ -401,7 +401,7 @@
 @media only screen and (min-width: 992px) {
   .custom-form-field:focus {
     border-width: 3px;
-    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image: linear-gradient(to right, #fff, #fff);
     border-image-slice: 1;
   }
 }
@@ -423,7 +423,7 @@
 }
 
 .custom-btn {
-  background-color: #3a459c;
+  background-color: #262B62;
   color: #fff;
   border: 1px solid white;
   display: flex;
@@ -441,7 +441,7 @@
 }
 .custom-btn:hover {
   background-color: #fff;
-  color: #3a459c;
+  color: #262B62;
 }
 
 .center {

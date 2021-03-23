@@ -34,13 +34,13 @@
             @include imageScreenCover(50vh);
             
             @include responsiveLarge(){
-                @include imageScreenCover(100vh);
+                @include imageScreenCover(60vh);
             }
         }
     }
     
     h2{
-        @include position-absolute(45%, 50%);
+        @include position-absolute(40%, 50%);
         @include responsiveMobile(){
             @include position-absolute(50%, 50%);
         }

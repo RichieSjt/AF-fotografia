@@ -9,7 +9,7 @@
     font-family: inherit;
     width: 100%;
     border: 0;
-    border-bottom: 2px solid $light-blue-af;
+    border-bottom: 2px solid $white;
     outline: 0;
     font-size: 1.1rem;
     color: $white;
@@ -34,7 +34,7 @@
   display: block;
   transition: 0.2s;
   font-size: 1rem;
-  color: $light-blue-af;
+  color: $white;
 }
 
 .custom-form-field:focus {
@@ -46,10 +46,10 @@
     font-size: 1rem;
   }
   padding-bottom: 6px;
-  border-bottom: 3px linear-gradient(to right, $primary-input,$secondary-input);
+  border-bottom: 3px linear-gradient(to right, $white,$white);
   @include responsiveLarge(){
         border-width: 3px;
-        border-image: linear-gradient(to right, $primary-input,$secondary-input);
+        border-image: linear-gradient(to right, $white,$white);
         border-image-slice: 1;
   }
 }
@@ -70,7 +70,7 @@
 }
 
 .custom-btn{
-    background-color: $dark-purple-af;
+    background-color: $dark-blue-af;
     color: $white;
     border: 1px solid white;
     display: flex;
@@ -85,6 +85,6 @@
     
     &:hover{
         background-color: $white;
-        color: $dark-purple-af;
+        color: $dark-blue-af;
     }
 }
