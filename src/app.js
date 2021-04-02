@@ -1,8 +1,7 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
-const staticPagesRouter = require('./routers/static-pages')
-
+const mainRoutes = require('./routers/main-routes')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -19,27 +18,11 @@ hbs.registerPartials(partialsPath)
 
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
 
-// Static pages
-app.use(staticPagesRouter)
-
-// blog 404
-app.get('/blog/*', (req, res) => {
-    res.render('404',  {
-        title: '404',
-        name: 'AF',
-        message: 'Help article not found'
-    })
-})
-
-// 404 page
-app.get('*', (req, res) => {
-    res.render('404',  {
-        title: '404',
-        name: 'AF',
-        message: 'Page not found'
-    })
-})
+// Application routes
+app.use(mainRoutes)
 
 app.listen(port, () =>{
     console.log('Server is up on port ' + port + '.')

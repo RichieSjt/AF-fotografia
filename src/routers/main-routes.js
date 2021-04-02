@@ -1,4 +1,5 @@
 const express = require('express')
+const writeIntoSheet = require('../utils/google-sheets')
 
 const router = new express.Router()
 
@@ -42,6 +43,42 @@ router.get('/tienda', (req, res) => {
     res.render('tienda', {
         active: { tienda: true }
     })
+})
+
+// 404
+router.get('*', (req, res) => {
+    res.render('404',  {
+        title: '404',
+        name: 'AF',
+        message: 'Page not found'
+    })
+})
+
+
+// blog 404
+router.get('/blog/*', (req, res) => {
+    res.render('404',  {
+        title: '404',
+        name: 'AF',
+        message: 'Blog article not found'
+    })
+})
+
+router.post('/contacto', (req, res) => {
+    try {
+        contactForm = req.body
+        
+        if (contactForm.c !== '') {
+            return res.send()
+        }
+        contactFormArray = Object.values(contactForm)
+        contactFormArray.pop()
+        
+        writeIntoSheet(contactFormArray)
+        res.send()
+    } catch (e) {
+        res.status(500).send(e.message)
+    }
 })
 
 module.exports = router
