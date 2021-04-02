@@ -1,8 +1,8 @@
 .custom-form-group {
-  position: relative;
-  padding: 15px 0 0;
-  margin-top: 10px;
-  width: 50%;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
 }
 
 .custom-form-field {
@@ -21,7 +21,7 @@
         color: transparent;
     }
 
-    &:placeholder-shown ~ .custom-form-label {
+    &:placeholder-shown~.custom-form-label {
         font-size: 1.3rem;
         cursor: text;
         top: 20px;
@@ -29,47 +29,56 @@
 }
 
 .custom-form-label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: $white;
-}
-
-.custom-form-field:focus {
-  ~ .custom-form-label {
     position: absolute;
     top: 0;
     display: block;
     transition: 0.2s;
     font-size: 1rem;
-  }
-  padding-bottom: 6px;
-  border-bottom: 3px linear-gradient(to right, $white,$white);
-  @include responsiveLarge(){
-        border-width: 3px;
-        border-image: linear-gradient(to right, $white,$white);
-        border-image-slice: 1;
-  }
+    color: $white;
 }
+
+.custom-form-field:focus {
+    ~.custom-form-label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+
+    padding-bottom: 6px;
+    border-bottom: 3px linear-gradient(to right, $primary-input, $secondary-input);
+
+    @include responsiveLarge() {
+        border-width: 3px;
+        border-image: linear-gradient(to right, $primary-input, $secondary-input);
+        border-image-slice: 1;
+    }
+}
+
 /* reset input */
-.custom-form-field{
-  &:required,&:invalid { box-shadow:none; }
-  /* Change the white to any color */
+.custom-form-field {
+
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+
+    /* Change the white to any color */
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus,
-    &:-webkit-autofill:active{
-        box-shadow: 0 0 0 30px $dark-purple-af inset !important;
+    &:-webkit-autofill:active {
+        box-shadow: 0 0 0 30px $dark-blue-af inset !important;
         -webkit-text-fill-color: white;
     }
 }
+
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
 
-.custom-btn{
+.custom-btn {
     background-color: $dark-blue-af;
     color: $white;
     border: 1px solid white;
@@ -79,11 +88,11 @@
     transition-property: all;
     transition-duration: 0.4s;
 
-    i{
+    i {
         padding-top: 3.4px;
     }
-    
-    &:hover{
+
+    &:hover {
         background-color: $white;
         color: $dark-blue-af;
     }

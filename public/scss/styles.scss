@@ -81,10 +81,7 @@
     }
 }
 
-#about-cover, 
-#wedding-portfolio-cover, 
-#portrait-portfolio-cover,
-#product-portfolio-cover{
+.main-cover{
     @include opacity(0.8);
 
     img{

@@ -1,0 +1,32 @@
+{
+  "name": "AF-fotografia",
+  "version": "1.0.0",
+  "description": "Website developed for the photography company AF-Fotografía.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/app.js --ext js,mjs,json,hbs,scss --exec \"npm run compile-sass\"",
+    "compile-sass": "sass --style=compressed --update public/scss/styles.scss public/css/styles.css && node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichieSjt/AF-fotografia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichieSjt/AF-fotografia/issues"
+  },
+  "homepage": "https://github.com/RichieSjt/AF-fotografia#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^70.0.0",
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
