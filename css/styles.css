@@ -444,6 +444,29 @@
   color: #262B62;
 }
 
+.featured-img {
+  max-height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.author-img {
+  max-width: 60px;
+  max-height: 60px;
+  width: 100%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.img-row-3 img {
+  width: 100%;
+  height: auto;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -530,22 +553,13 @@
   opacity: 0.6;
 }
 
-#about-cover,
-#wedding-portfolio-cover,
-#portrait-portfolio-cover,
-#product-portfolio-cover {
+.main-cover {
   background-color: #000000;
 }
-#about-cover img,
-#wedding-portfolio-cover img,
-#portrait-portfolio-cover img,
-#product-portfolio-cover img {
+.main-cover img {
   opacity: 0.8;
 }
-#about-cover img,
-#wedding-portfolio-cover img,
-#portrait-portfolio-cover img,
-#product-portfolio-cover img {
+.main-cover img {
   height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -553,10 +567,7 @@
   width: 100%;
 }
 @media only screen and (min-width: 992px) {
-  #about-cover img,
-#wedding-portfolio-cover img,
-#portrait-portfolio-cover img,
-#product-portfolio-cover img {
+  .main-cover img {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;

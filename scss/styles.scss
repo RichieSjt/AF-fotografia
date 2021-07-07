@@ -8,6 +8,7 @@
 @import '_navbar';
 @import '_carousel';
 @import '_input';
+@import '_blog_post';
 
 .center{
     @include flexCenter(column);
@@ -81,10 +82,7 @@
     }
 }
 
-#about-cover, 
-#wedding-portfolio-cover, 
-#portrait-portfolio-cover,
-#product-portfolio-cover{
+.main-cover{
     @include opacity(0.8);
 
     img{
