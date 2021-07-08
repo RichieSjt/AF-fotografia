@@ -18,3 +18,63 @@
         height: auto;
     }
 }
+
+.author {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.tag-container {
+    background-color: $gray-input;
+    border-radius: 6px;
+    padding: 3px 8px 3px 8px;
+    i {
+        padding-right: 6px;
+    }
+}
+
+.tag {
+    @extend .tag-container;
+    color: $gray-af;
+    cursor: pointer;
+}
+
+.comment-tag {
+    @extend .tag-container;
+    a {
+        text-decoration: none;
+        color: $gray-af;
+    }
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 0 8px 0;
+    max-width: 800px;
+
+    >p {
+        background-color: $gray-input;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 0 0 15px 80px;
+        color: $gray-af;
+    }
+
+    button {
+        margin-left: auto;
+    }
+}
+
+.reply {
+    @extend .comment;
+    padding-left: 80px;
+}
+
+.comment-button {
+    max-width: 300px;
+    width: 100%;
+}

@@ -30,11 +30,11 @@
   background-color: #262B62;
 }
 
-.grey-af {
+.gray-af {
   color: #EAEAEA;
 }
 
-.grey-af-bg {
+.gray-af-bg {
   background-color: #EAEAEA;
 }
 
@@ -465,6 +465,59 @@
 .img-row-3 img {
   width: 100%;
   height: auto;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.tag-container, .comment-tag, .tag {
+  background-color: #9b9b9b;
+  border-radius: 6px;
+  padding: 3px 8px 3px 8px;
+}
+.tag-container i, .comment-tag i, .tag i {
+  padding-right: 6px;
+}
+
+.tag {
+  color: #EAEAEA;
+  cursor: pointer;
+}
+
+.comment-tag a {
+  text-decoration: none;
+  color: #EAEAEA;
+}
+
+.comment, .reply {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 0 8px 0;
+  max-width: 800px;
+}
+.comment > p, .reply > p {
+  background-color: #9b9b9b;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 0 0 15px 80px;
+  color: #EAEAEA;
+}
+.comment button, .reply button {
+  margin-left: auto;
+}
+
+.reply {
+  padding-left: 80px;
+}
+
+.comment-button {
+  max-width: 300px;
+  width: 100%;
 }
 
 .center {
