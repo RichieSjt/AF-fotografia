@@ -500,6 +500,11 @@
   padding: 8px 0 8px 0;
   max-width: 800px;
 }
+@media only screen and (max-width: 767px) {
+  .comment, .reply {
+    padding: 8px 20px 8px 20px;
+  }
+}
 .comment > p, .reply > p {
   background-color: #9b9b9b;
   border-radius: 8px;
@@ -507,12 +512,22 @@
   margin: 0 0 15px 80px;
   color: #EAEAEA;
 }
+@media only screen and (max-width: 767px) {
+  .comment > p, .reply > p {
+    margin: 0 0 15px 0;
+  }
+}
 .comment button, .reply button {
   margin-left: auto;
 }
 
 .reply {
   padding-left: 80px;
+}
+@media only screen and (max-width: 767px) {
+  .reply {
+    padding-left: 50px;
+  }
 }
 
 .comment-button {

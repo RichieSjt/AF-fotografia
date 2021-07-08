@@ -56,12 +56,20 @@
     padding: 8px 0 8px 0;
     max-width: 800px;
 
+    @include responsiveMobile() {
+        padding: 8px 20px 8px 20px;
+    }
+
     >p {
         background-color: $gray-input;
         border-radius: 8px;
         padding: 15px;
         margin: 0 0 15px 80px;
         color: $gray-af;
+
+        @include responsiveMobile() {
+            margin: 0 0 15px 0;
+        }
     }
 
     button {
@@ -72,6 +80,10 @@
 .reply {
     @extend .comment;
     padding-left: 80px;
+
+    @include responsiveMobile() {
+        padding-left: 50px;
+    }
 }
 
 .comment-button {
