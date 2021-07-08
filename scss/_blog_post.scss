@@ -4,13 +4,6 @@
     @include backgroundCover;
 
 }
-.author-img {
-    max-width: 60px;
-    max-height: 60px;
-    width: 100%;
-    border-radius: 50%;
-    @include backgroundCover;
-}
 
 .img-row-3 {
     img {
@@ -24,6 +17,13 @@
     align-items: center;
     align-content: center;
     flex-direction: row;
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        @include backgroundCover;
+    }
 }
 
 .tag-container {
@@ -39,10 +39,6 @@
     @extend .tag-container;
     color: $gray-af;
     cursor: pointer;
-}
-
-.comment-tag {
-    @extend .tag-container;
     a {
         text-decoration: none;
         color: $gray-af;
