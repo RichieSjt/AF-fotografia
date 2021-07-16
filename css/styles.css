@@ -1,3 +1,26 @@
+.center {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center-h {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.center-absolute, .post-archive a h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .light-cyan-af {
   color: #94BDCF;
 }
@@ -532,27 +555,73 @@
   width: 100%;
 }
 
-.center {
+.post-archive-container {
+  padding-left: 3vw;
+  padding-right: 3vw;
+  max-width: none;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .post-archive-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.post-archive {
   display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  flex-direction: column;
+  height: 65vh;
+  padding: 5px;
+}
+@media only screen and (max-width: 767px) {
+  .post-archive {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .post-archive {
+    height: 50vh;
+  }
+}
+.post-archive a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 14px;
+  transition: background-color 0.2s ease-out;
+}
+.post-archive a:hover {
+  background-color: #000000;
+}
+.post-archive a:hover img {
+  opacity: 0.6;
+}
+.post-archive a img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  transition: opacity 0.2s ease-out;
+}
+@media only screen and (max-width: 767px) {
+  .post-archive a h2 {
+    font-size: 22px;
+  }
+}
+
+.post-archive-1 {
+  display: flex;
   flex-direction: column;
 }
-
-.center-h {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.center-absolute {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.post-archive-1 img {
+  width: auto;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
 }
 
 #fer-portrait {

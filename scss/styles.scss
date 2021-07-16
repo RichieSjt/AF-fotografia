@@ -9,21 +9,7 @@
 @import '_carousel';
 @import '_input';
 @import '_blog_post';
-
-.center{
-    @include flexCenter(column);
-}
-
-.center-h{
-    @include flexCenter(row);
-}
-
-.center-absolute{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+@import '_content_archive';
 
 #fer-portrait{
     border-radius: 50px;

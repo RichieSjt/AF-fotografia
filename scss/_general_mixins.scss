@@ -32,3 +32,18 @@
     left: $left;
     transform: translate(-50%, -50%);
 }
+
+.center{
+    @include flexCenter(column);
+}
+
+.center-h{
+    @include flexCenter(row);
+}
+
+.center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
