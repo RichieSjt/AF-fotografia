@@ -40,6 +40,9 @@
         }
     }
 }
+#navbarNav {
+    @extend .avant-garde-bk;
+}
 
 @include responsiveLarge(){
     .navbar{
