@@ -88,21 +88,8 @@ cite.fn {
 }
 
 .comment-reply-link, #submit{
-    @extend .center;
-    background-color: $gray-af;
-    color: $gray-input;
-    border: 1px solid $gray-input;
-    transition: background-color .2s ease-in-out;
-    border-radius: 6px;
-    height: 40px;
-    padding: 12px;
+    @extend .button-template-1;
     text-decoration: none;
-
-    &:hover {
-        background-color: $gray-input;
-        color: $gray-af;
-        text-decoration: none;
-    }
 }
 
 #submit {
@@ -130,6 +117,8 @@ cite.fn {
     width: 100%;
     max-width: 720px;
     margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .comment-reply-title {
@@ -150,6 +139,20 @@ cite.fn {
 
 .logged-in-as {
     text-align: center;
+}
+
+.comment-notes, .comment-form-author, .comment-form-email, .comment-form-url, .comment-form-cookies-consent{
+    @extend .avant-garde-bk;
+}
+
+.comment-form-author, .comment-form-email {
+    input {
+        @extend .input-template-1;
+    }
+}
+
+.comment-form-url {
+    display: none;
 }
 
 textarea#comment {

@@ -14,33 +14,11 @@
 }
 
 #searchsubmit {
-    background-color: #EAEAEA;
-    color: #262B62;
-    border: 1px solid #262B62;
-    transition: background-color .2s ease-in-out;
-    border-radius: 6px;
-    height: 40px;
-
-    &:hover {
-        background-color: #262B62;
-        color: #EAEAEA;
-    }
+    @extend .button-template-1;
 }
 
 #s {
-    background-color: #EAEAEA;
-    color: #262B62;
-    border: 1px solid #262B62;
-    border-radius: 6px;
-    height: 40px;
-    max-width: 400px;
-    width: 100%;
-    margin-right: 20px;
-    padding: 0 10px 0 10px;
+    @extend .input-template-1;
 
-    &:focus {
-        outline: none;
-        border:1px solid $gray-input;
-        box-shadow: 0 0 5px $gray-input;
-    }
+    margin-right: 20px;
 }

@@ -1,33 +1,26 @@
 .pagination-style {
-    border: 1px solid $dark-blue-af; 
-    padding: 6px 16px 6px 16px;
+    @extend .button-template-1;
     margin: 6px;
-    border-radius: 6px;
-    transition: background-color .2s ease-in-out;
     
-    &:hover {
-        text-decoration: none;
-        cursor: pointer;
-    }
 }
 
 .pagination-number {
     @extend .pagination-style;
-    color: $dark-blue-af;
+    color: $dark-gray-af;
 
     &:hover {
         color: $gray-af;
-        background-color: $dark-blue-af;
+        background-color: $dark-gray-af;
     }
 }
 
 .pagination-number-active {
     @extend .pagination-style;
     color: $gray-af;
-    background-color: $dark-blue-af;
+    background-color: $dark-gray-af;
 
     &:hover {
-        color: $dark-blue-af;
+        color: $dark-gray-af;
         background-color: $gray-af;
     }
 }

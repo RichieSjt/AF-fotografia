@@ -37,3 +37,39 @@
         color: $gray-af;
     }
 }
+
+.button-template-1 {
+    @extend .center;
+    @extend .avant-garde-bk;
+    background-color: $gray-af;
+    color: $dark-gray-af;
+    border: 1px solid $dark-gray-af;
+    transition: background-color .2s ease-in-out;
+    border-radius: 6px;
+    padding: 6px 16px 6px 16px;
+    height: 40px;
+
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        background-color: $dark-gray-af;
+        color: $gray-af;
+    }
+}
+
+.input-template-1 {
+    background-color: #f6f6f6;
+    color: $dark-gray-af;
+    border: 1px solid $dark-gray-af;
+    border-radius: 6px;
+    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 10px 0 10px;
+
+    &:focus {
+        outline: none;
+        border: 1px solid $dark-gray-af;
+        box-shadow: 0 0 2px $dark-gray-af;
+    }
+}
