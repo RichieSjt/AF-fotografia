@@ -1,0 +1,172 @@
+
+// Old comments
+
+// #comments {
+//     .comment {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         padding: 8px 0 8px 0;
+//         max-width: 800px;
+    
+//         @include responsiveMobile() {
+//             padding: 8px 20px 8px 20px;
+//         }
+    
+//         >p {
+//             background-color: $gray-input;
+//             border-radius: 8px;
+//             padding: 15px;
+//             margin: 0 0 15px 80px;
+//             color: $gray-af;
+    
+//             @include responsiveMobile() {
+//                 margin: 0 0 15px 0;
+//             }
+//         }
+    
+//         button {
+//             margin-left: auto;
+//         }
+//     }
+    
+//     .reply {
+//         @extend .comment;
+//         padding-left: 80px;
+    
+//         @include responsiveMobile() {
+//             padding-left: 50px;
+//         }
+//     }
+    
+//     .comment-button {
+//         max-width: 300px;
+//         width: 100%;
+//     }
+    
+// }
+
+// Wordpress comments
+
+.comment {
+    width: 100%;
+
+    >p {
+        background-color: $gray-input;
+        border-radius: 8px;
+        padding: 15px;
+        color: $gray-af;
+    }
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 18px;
+    @include backgroundCover;
+}
+
+.reply {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px;
+}
+
+cite.fn {
+    @extend .avant-garde-bk;
+    font-weight: bold;
+    font-style: normal;
+    a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.comment-reply-link, #submit{
+    @extend .center;
+    background-color: $gray-af;
+    color: $gray-input;
+    border: 1px solid $gray-input;
+    transition: background-color .2s ease-in-out;
+    border-radius: 6px;
+    height: 40px;
+    padding: 12px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $gray-input;
+        color: $gray-af;
+        text-decoration: none;
+    }
+}
+
+#submit {
+    margin-left: auto;
+}
+
+.comment {
+    max-width: 720px;
+}
+
+.comment-meta {
+    @extend .avant-garde-bk;
+    padding: 10px 0 10px 3px;
+
+    a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+#respond {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+}
+
+.comment-reply-title {
+    @extend .qualy-bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.comment-reply-title > a{
+    @extend .qualy-bold;
+    color: black;
+}
+
+#cancel-comment-reply-link {
+    @extend .avant-garde-bk;
+    color: black;
+}
+
+.logged-in-as {
+    text-align: center;
+}
+
+textarea#comment {
+    border-radius: 10px;
+    border: 1px solid $gray-input;
+    background-color: rgb(246, 246, 246);
+    padding: 10px 15px 10px 15px;
+
+    &:focus {
+        outline: none;
+        border:1px solid $gray-input;
+        box-shadow: 0 0 5px $gray-input;
+    }
+}
+
+.comment-form-comment{
+    @extend .avant-garde-bk;
+    display: flex;
+    flex-direction: column;
+}

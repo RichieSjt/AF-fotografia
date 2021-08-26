@@ -9,6 +9,9 @@
 @import '_carousel';
 @import '_input';
 @import '_blog_post';
+@import '_blog_search';
+@import '_blog_pagination';
+@import '_blog_comments';
 @import '_content_archive';
 
 #fer-portrait{
@@ -32,6 +35,9 @@
         &:hover{
             color: #007bff;
         }
+        @include responsiveMobile() {
+            color: #007bff;
+        }
     }
     .fa-instagram{
         transition-property: color;
@@ -39,11 +45,17 @@
         &:hover{
             color: #C13584;
         }
+        @include responsiveMobile() {
+            color: #C13584;
+        }
     }
     .fa-youtube{
         transition-property: color;
         transition-duration: 0.3s;
         &:hover{
+            color: #dc3545;
+        }
+        @include responsiveMobile() {
             color: #dc3545;
         }
     }

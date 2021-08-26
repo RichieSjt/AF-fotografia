@@ -42,6 +42,7 @@
 }
 #navbarNav {
     @extend .avant-garde-bk;
+    text-transform: uppercase;
 }
 
 @include responsiveLarge(){
