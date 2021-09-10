@@ -1,0 +1,12 @@
+.coming-soon{
+    height: 40vh;
+    h3{
+        font-size: 40px;
+    }
+    @include responsiveMobile{
+        flex-grow: 1;
+        h3{
+            font-size: 28px;
+        }
+    }
+}

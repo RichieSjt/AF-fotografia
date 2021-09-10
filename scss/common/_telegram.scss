@@ -1,0 +1,25 @@
+.telegram-icon-container{
+    height: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+.telegram-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.telegram-icon-mobile{
+    width: 50px;
+    height: 50px;
+}

@@ -33,6 +33,14 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin grow($grow-factor){
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale($grow-factor);
+    }
+}
+
 .center{
     @include flexCenter(column);
 }
@@ -48,10 +56,14 @@
     transform: translate(-50%, -50%);
 }
 
-@mixin grow($grow-factor){
-    transition: all .2s ease-in-out;
+.main-cover{
+    @include opacity(0.8);
 
-    &:hover {
-        transform: scale($grow-factor);
+    img{
+        @include imageScreenCover(50vh);
+        @include responsiveLarge(){
+            @include imageScreenCover(100vh);
+        }
+        width: 100%;
     }
 }

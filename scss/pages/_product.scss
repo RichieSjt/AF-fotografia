@@ -1,0 +1,34 @@
+#carouselEstudioProduct, 
+#carouselComercialProduct, 
+#carouselGastroProduct{
+    .carousel-item{
+        @include opacity(0.6);
+        img{
+            @include imageScreenCover(50vh);
+            
+            @include responsiveLarge(){
+                @include imageScreenCover(60vh);
+            }
+        }
+    }
+    
+    h2{
+        @include position-absolute(40%, 50%);
+        @include responsiveMobile(){
+            @include position-absolute(50%, 50%);
+        }
+    }
+    p{
+        @include position-absolute(55%, 50%);
+        @include responsiveMobile(){
+            display: none;
+        }
+    }
+}
+
+.img-description{
+    display: none;
+    @include responsiveMobile(){
+        display: block;
+    }
+}

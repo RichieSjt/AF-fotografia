@@ -1,0 +1,27 @@
+#carouselPortrait{
+    .carousel-inner{
+        max-height: 90vh;
+        @include responsiveMobile(){
+            max-height: 50vh;
+        }
+    }
+}
+
+.container-carousel{
+    width: 100%;
+    background-color:#EAEAEA ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 380px;
+    height: 618px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 5px 0px;
+}

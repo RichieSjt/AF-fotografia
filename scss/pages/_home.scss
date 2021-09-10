@@ -1,0 +1,106 @@
+#carouselHome{
+    .carousel-item{
+        @include opacity(0.6);
+
+        img{
+            @include imageScreenCover(50vh);
+        
+            @include responsiveLarge(){
+                @include imageScreenCover(100vh);
+            }
+        }
+    }
+}
+
+#fer-portrait{
+    border-radius: 50px;
+}
+
+#social-icons{
+    @include flexCenter(row);
+
+    @include responsiveLarge(){
+        @include flexCenter(column);
+    }
+    a{
+        i{
+            color: rgb(33, 37, 41);
+        }
+    }
+    .fa-facebook-square{
+        transition-property: color;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #007bff;
+        }
+        @include responsiveMobile() {
+            color: #007bff;
+        }
+    }
+    .fa-instagram{
+        transition-property: color;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #C13584;
+        }
+        @include responsiveMobile() {
+            color: #C13584;
+        }
+    }
+    .fa-youtube{
+        transition-property: color;
+        transition-duration: 0.3s;
+        &:hover{
+            color: #dc3545;
+        }
+        @include responsiveMobile() {
+            color: #dc3545;
+        }
+    }
+    // Learn more button
+    div{
+        a{
+            transition-property: all;
+            transition-duration: 0.4s;
+        }
+    }
+}
+
+#banners-home{
+    div{
+        @include opacity(0.7);
+        transition: all .2s ease-in-out;
+
+        &:hover{
+            @include opacity(0.6);
+
+        }
+    }
+}
+
+#carouselQuotes{
+    .carousel-control-prev, .carousel-control-next {
+        width: 4rem;
+    }
+}
+
+.quotes-card{
+    .row{
+        .rounded{
+            @include responsiveMobile{
+                border-radius: 0 !important;
+            }
+        }
+    }
+    @include responsiveMobile{
+        max-width: 100%;
+    }
+}
+
+.quote-carousel{
+    min-height: 175px;
+
+    @include responsive(0px, 767px) {
+        min-height: 350px;
+    }
+}

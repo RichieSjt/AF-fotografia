@@ -1,0 +1,17 @@
+#about-image{
+    @include responsiveMobile(){
+        display: none;
+    }
+}
+
+#about-image-mobile{
+    display: none;
+    @include responsiveMobile(){
+        display: block;
+    }
+}
+
+.about-quotes-container{
+    width: 100%;
+    max-width: 85%;
+}

@@ -37,11 +37,6 @@
         justify-content: center;
         align-items: center;
 
-        span.page-numbers {
-            &:not(.dots) {
-                @extend .pagination-number-active;
-            }
-        }
         .page-numbers {
             &:not(.dots):not(span) {
                 @extend .pagination-number;

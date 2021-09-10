@@ -1,0 +1,39 @@
+.featured-img {
+    max-height: 60vh;
+    width: 100%;
+    @include backgroundCover;
+
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        @include backgroundCover;
+    }
+}
+
+.tag-container {
+    background-color: $gray-input;
+    border-radius: 6px;
+    padding: 3px 8px 3px 8px;
+    i {
+        padding-right: 6px;
+    }
+}
+
+.tag {
+    @extend .tag-container;
+    color: $gray-af;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        color: $gray-af;
+    }
+}
